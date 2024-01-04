@@ -14,6 +14,9 @@
   <!-- Tailwind CSS CDN (Note: You should link to a local installation for production) -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <title>Fair&Glow Beauty Clinic</title>
 </head>
 
@@ -90,7 +93,7 @@
     style="background-image: url('./images/bg.jpg')">
     <!-- Content within the hero section -->
     <section>
-      <div class="grid lg:h-screen max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+      <div class="grid lg:h-screen max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12" data-aos="fade-down">
         <div class="mr-auto mt-24 lg:mt-12 place-self-center lg:col-span-7">
           <!-- Hero title -->
           <h1
@@ -625,6 +628,9 @@
                 }
             })
         })
+    </script>
+    <script>
+      AOS.init();
     </script>
     
   
